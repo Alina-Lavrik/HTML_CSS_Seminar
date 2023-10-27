@@ -13,6 +13,10 @@ body {
     font-family: sans-serif;
 }
 
+image {
+    min-width: 100%;
+}
+
 .menu_link {
     color: #FFF;
     font-family: Open Sans;
@@ -275,6 +279,12 @@ body {
 .flex_two {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.footer_box {
+    width: 33.333333%;
 }
 
 .footer_title {

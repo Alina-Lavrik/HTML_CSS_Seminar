@@ -1,21 +1,24 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box; /*размеры border и padding будут вычтены из общего размера блока, оставшаяся часть пойдет под контент*/
 }
 
 a {
     text-decoration: none;
 }
 
-body {
-    background-color: #020A18;
-    font-family: sans-serif;
+
+.center {
+    padding-left: calc(50% - 573px); /* 1146/2 = 573 px*/
+    padding-right: calc(50% - 573px); /* 1146/2 = 573 px*/
 }
 
-image {
-    min-width: 100%;
+body {
+    background-color: #020A18;
+    font-family: 'Open Sans', sans-serif;
 }
+ 
 
 .menu_link {
     color: #FFF;
@@ -27,15 +30,17 @@ image {
     padding: 40px 16px;
 }
 
-.nav {
+.nav {            /*навигация - ссылки помещаем в тег nav*/
     display: flex;
     justify-content: center;   /*разместить по центру*/
+} 
+    
+
+.container {        /*отвечает за центровку*/
+    margin: 0 auto;
+    max-width: 1147px;
 }
 
-.container {
-    margin: 0 auto;
-    width: 1147px;
-}
 
 .menu_link:hover {   /*при наведении мышки будет меняться цвет*/
     color: #3A6888;
@@ -96,18 +101,18 @@ image {
     justify-content: space-between;
 }
 
-.main_left, .main_right {
-    width: 47%;
+.main_left {
+    width: 52.746%;
+}
+
+.image_main {
+    width: 36%;
 }
 
 .main {
     margin-bottom: 200px;
 }
 
-.main_right {
-    display: flex;
-    justify-content: end;
-}
 
 .logo {
     margin-bottom: 256px;
@@ -320,4 +325,13 @@ image {
 
 .logo_footer_r {
     margin-right: 24px;
+}
+
+
+/* создание стилей для планшета*/
+
+@media (max-width: 1024px) {
+
+
+
 }
